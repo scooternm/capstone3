@@ -1,20 +1,6 @@
 const BASE_URL = "http://microbloglite.us-east-2.elasticbeanstalk.com";
 
 const NO_AUTH_HEADERS = { 'accept': 'application/json', 'Content-Type': 'application/json' };
-// ONLY 2 - INSECURE TOKEN FREE ACTIONS
-
-//create user - sign up
-/*
-curl -X 'POST' \
-  'http://microbloglite.us-east-2.elasticbeanstalk.com/api/users' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "username": "string",
-  "fullName": "string",
-  "password": "string"
-}'
-*/
 async function signUp(username, fullName, password) {
     const payload = JSON.stringify(
         { "username": username, "fullName": fullName, "password": password }
@@ -35,18 +21,6 @@ async function signUp(username, fullName, password) {
     return object;
 }
 
-
-//login and store username and token received
-/*
-curl -X 'POST' \
-  'http://microbloglite.us-east-2.elasticbeanstalk.com/auth/login' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "username": "string",
-  "password": "string"
-}'
-*/
 async function login(username, password) {
     const payload = JSON.stringify({ "username": username, "password": password });
     const response = await fetch(BASE_URL + "/auth/login", {
