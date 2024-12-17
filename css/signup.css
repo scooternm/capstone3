@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #003366, #004080);
+    color: #002244;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1 {
+    font-family: "Comic Sans MS", "Verdana", "Arial", sans-serif;
+    font-size: 36px;
+    color: lightblue;
+    text-shadow: 2px 2px 5px #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+div {
+    margin: 50px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: #002b14;
+    border: 2px solid #006622;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #222222;
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+    border: 2px solid #004d26;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px #555555;
+    background-color: #001f10;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #007733;
+    font-family: "Comic Sans MS", "Verdana", "Arial", sans-serif;
+}
+
+button {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #004d26;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Verdana", "Arial", sans-serif;
+    border: 2px solid #003d1a;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #111111;
+}
+
+button:hover {
+    background-color: #006633; 
+    border-color: #004d1a;
+}
