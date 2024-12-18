@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-    signUpButton.addEventListener("click",async ()=>{
+    signupBtn.addEventListener("click",async ()=>{
         const result = await signUp(
             username.value,
             fullName.value,
@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             output.innerText = "Username already taken.";
             return;
         }
-        //SUCCESS
         window.location.href = "login.html";
     });//end click
 }); //end loaded
