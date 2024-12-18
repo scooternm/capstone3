@@ -13,4 +13,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     const messages = await getMessageList();
     output.innerHTML = messages.map(getMessage).join("<hr>\n")
 
-});//end load
+});

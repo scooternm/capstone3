@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
             return;
         }
         window.location.href = "login.html";
-    });//end click
-}); //end loaded
+    });
+});
