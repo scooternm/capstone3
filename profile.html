@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="./css/profile.css">
+    <script src="./js/profile.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="signup.html">Sign-Up</a>
+        <a href="login.html">Login</a>
+        <a href="new.html">New Message</a>
+        </nav>
     <div>
+        <input type="text" id="fullName" placeholder="Full Name"><br>
+        <input type="text" id="userName" placeholder="Username"><br>
         <label for="bio">Write About Yourself:</label><br>
-        <textarea id="bio" name="bio" rows="10" cols="50" placeholder="Talk about yourself..."></textarea>
+        <textarea id="bio" name="bio" rows="10" cols="50" placeholder="Talk about yourself..."></textarea><br>
+        <button id="subBtn">Save</button>
     </div>
     <div>
-        <h2>What's the vibe</h2>
+        <h2>What's the vibe?</h2>
         <audio controls>
             <source src="./audio/young-jeezy-prime-minister_put-on-remix-ft-ludacris-and-lil-wayne.mp3" type="audio/mp3">
         </audio>
