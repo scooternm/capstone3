@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     signupBtn.addEventListener("click",async ()=>{
         const result = await signUp(
             username.value,
-            fullName.value,
+            fullname.value,
             password.value
         );
         if("Conflict" === result){

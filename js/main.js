@@ -10,14 +10,12 @@ async function signUp(username, fullName, password) {
         method: "POST",
         headers: NO_AUTH_HEADERS,
         body: payload
-    }); //end fetch
-
-    //TODO check for error response status codes
+    });
     if (response.status != 201) {
         console.log(response.status, response.statusText);
         return response.statusText;
     }
-    const object = await response.json(); //COnvert body to object
+    const object = await response.json();
     return object;
 }
 
@@ -27,28 +25,22 @@ async function login(username, password) {
         method: "POST",
         headers: NO_AUTH_HEADERS,
         body: payload
-    }); //end fetch
-
-    //TODO check for error response status codes
+    });
     if (response.status != 200) {
         console.log(response.status, response.statusText);
         return response.statusText;
     }
-    const object = await response.json(); //COnvert body to object
+    const object = await response.json();
     localStorage.token = object.token;
     localStorage.username = object.username;
     return object;
 }
-
-// ALL THE OTHERS NEED A TOKEN IN THE HEADER
 function headersWithAuth() {
-    //SAME AS NO AUTH BUT WITH AUTH ADDED
     return { 
         ...NO_AUTH_HEADERS, 
         'Authorization': `Bearer ${localStorage.token}`,
     }
 }
-// get secure list of message using token
 async function getMessageList() {
     const LIMIT_PER_PAGE = 1000;
     const OFFSET_PAGE = 0;
@@ -65,10 +57,10 @@ async function getMessageList() {
 
 async function sendText(text){
     const response = await fetch(
-        BASE_URL + "/api/posts", { // endpoint for messages/posts
-        method: "POST", //CREATE
+        BASE_URL + "/api/posts", {
+        method: "POST",
         headers: headersWithAuth(),
-        body: `{"text":"${text}"}` //make json string by hand instead of stringify
+        body: `{"text":"${text}"}`
     });
     const object = await response.json();
     return object;
