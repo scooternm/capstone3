@@ -38,3 +38,8 @@ profile features inputs to update username, full name, bio, and audio.
 ![profile](images/cap3profilecode.png)
 
 
+## CSS snippet
+i used the keyframe in my CSS to create a strobe effect to match the theme througout the page 
+![key](images/flashcode.png)
+
+
