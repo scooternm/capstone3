@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="./css/profile.css">
-    <script src="./js/profile.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/profile.js" defer></script>
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <nav>
@@ -15,19 +15,25 @@
         <a href="index.html">Logout</a>
         <a href="new.html">New Message</a>
         <a href="messages.html">Messages</a>
-        </nav>
-    <div>
-        <input type="text" id="fullName" placeholder="Full Name"><br>
-        <input type="text" id="userName" placeholder="Username"><br>
-        <label for="bio">Write About Yourself:</label><br>
-        <textarea id="bio" name="bio" rows="10" cols="50" placeholder="Talk about yourself..."></textarea><br>
-        <button id="subBtn">Save</button>
-    </div>
-    <div>
-        <h2>What's the vibe?</h2>
-        <audio controls>
-            <source src="./audio/young-jeezy-prime-minister_put-on-remix-ft-ludacris-and-lil-wayne.mp3" type="audio/mp3">
-        </audio>
-    </div>
+    </nav>
+    <main>
+        <section>
+            <h1>Profile</h1>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" placeholder="Full Name"><br>
+            <label for="userName">Username:</label><br>
+            <input type="text" id="userName" placeholder="Username"><br>
+            <label for="bio">Write About Yourself:</label><br>
+            <textarea id="bio" name="bio" rows="10" cols="50" placeholder="Talk about yourself..."></textarea><br>
+            <button id="subBtn">Save</button>
+        </section>
+        <section>
+            <h2>What's the vibe?</h2>
+            <audio controls>
+                <source src="./audio/young-jeezy-prime-minister_put-on-remix-ft-ludacris-and-lil-wayne.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
 </body>
 </html>

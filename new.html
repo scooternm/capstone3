@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Text</title>
-    <script src="./js/main.js"></script>
-    <script src="./js/new.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/new.js" defer></script>
     <link rel="stylesheet" href="./css/new.css">
 </head>
 <body>
@@ -14,12 +14,14 @@
         <a href="profile.html">My Profile</a>
         <a href="messages.html">Messages</a>
         <a href="index.html">Logout</a>
-
-
-        </nav>
+    </nav>
     <main>
-        <textarea id="sendMsg" name="sendMsg" rows="10" cols="50" placeholder="Write a message..."></textarea>
-        <button id="sendTextButton">Send Text</button>
+        <section>
+            <h1>New Message</h1>
+            <label for="sendMsg">Write a message:</label><br>
+            <textarea id="sendMsg" name="sendMsg" rows="10" cols="50" placeholder="Write a message..."></textarea><br>
+            <button id="sendTextButton">Send Text</button>
+        </section>
     </main>
 </body>
 </html>

@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Messages</title>
-    <script src="./js/main.js"></script>
-    <script src="./js/messages.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/messages.js" defer></script>
     <link rel="stylesheet" href="./css/messages.css">
 </head>
 <body>
     <nav>
-    <a href="index.html">Home</a>
-    <a href="signup.html">Sign-Up</a>
-    <a href="index.html">Logout</a>
-    <a href="new.html">New Message</a>
-    <a href="profile.html">My Profile</a>
+        <a href="index.html">Home</a>
+        <a href="signup.html">Sign-Up</a>
+        <a href="index.html">Logout</a>
+        <a href="new.html">New Message</a>
+        <a href="profile.html">My Profile</a>
     </nav>
-    <div>
-        <main>
-            <section id="sort">
-                <label for="sortMessage"><strong>Sort By:</strong></label><br>
-                <select id="sortMsg">
-                    <option value="newer">Newer Messages</option>
-                    <option value="older">Older Messages</option>
-                    <option value="ascend">(A-Z)</option>
-                    <option value="descend">(Z-A)</option>
-                </select>
-            </section>
-    </div>
-    <div id="output"></div>
+    <main>
+        <section id="sort">
+            <h2>Sort Messages</h2>
+            <label for="sortMsg"><strong>Sort By:</strong></label><br>
+            <select id="sortMsg">
+                <option value="newer">Newer Messages</option>
+                <option value="older">Older Messages</option>
+                <option value="ascend">(A-Z)</option>
+                <option value="descend">(Z-A)</option>
+            </select>
+        </section>
+        <div id="output"></div>
+    </main>
 </body>
 </html>
+

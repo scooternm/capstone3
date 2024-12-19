@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
     <link rel="stylesheet" href="./css/signup.css">
-    <script src="./js/signup.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/signup.js" defer></script>
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <nav>
         <a href="signup.html">Sign-Up</a>
         <a href="login.html">Login</a>
     </nav>
-    <h1>Welcome to the sign-up page !</h1>
-    <div>
-        <input id="username" placeholder="Username"><br>
-        <input id="fullname" placeholder="Full Name"><br>
-        <!-- <input id="email" placeholder="Email"><br> -->
-        <!-- <input id="password" placeholder="Password"><br> -->
-        <input type="password" id="password" placeholder="password">
-        <button id="signupBtn">Sign-Up</button>
-
-    </div>
+    <main>
+        <h1>Welcome to the Sign-Up Page!</h1>
+        <section>
+            <h2>Create Your Account</h2>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Username"><br>
+            
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name"><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Password"><br>
+            
+            <button id="signupBtn">Sign-Up</button>
+        </section>
+    </main>
 </body>
 </html>
+
